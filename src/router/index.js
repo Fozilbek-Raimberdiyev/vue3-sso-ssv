@@ -7,8 +7,8 @@ import Dashboard from "../components/Dashboard.vue"; // Secure page
 
 const routes = [
   { path: "/", redirect: "/dashboard" },
-  { path: "/login", component: Login },
-  { path: "/callback", component: Callback },
+  { path: "/auth/login", component: Login },
+  { path: "/auth/callback", component: Callback },
   {
     path: "/dashboard",
     component: Dashboard,
@@ -18,7 +18,7 @@ const routes = [
       if (isAuthenticated) {
         next();
       } else {
-        next("/login");
+        next("/auth/login");
       }
     },
   },

@@ -8,13 +8,13 @@
     </div>
 
     <div v-else>
-      <router-link style="margin-right: 10px; background-color: blue; color: white; padding: 5px 15px; border-radius: 5px" to="/login">Login</router-link>
+      <router-link style="margin-right: 10px; background-color: blue; color: white; padding: 5px 15px; border-radius: 5px" to="/auth/login">Login</router-link>
     </div>
   </template>
   
   <script>
   import { ref, onMounted } from 'vue';
-  import { getUserInfo } from '../services/authService';
+  import { getUserInfo } from '../services/authService.ts';
   
   export default {
     setup() {

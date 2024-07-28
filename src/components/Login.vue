@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { redirectToSSO } from "../services/authService";
+import { redirectToSSO } from "../services/authService.ts";
 
 export default {
   methods: {

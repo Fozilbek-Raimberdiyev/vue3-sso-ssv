@@ -9,7 +9,7 @@
 <script>
 import { onMounted } from "vue";
 import { useRouter, useRoute } from "vue-router";
-import { getToken } from "../services/authService";
+import { getToken } from "../services/authService.ts";
 
 export default {
   setup() {
