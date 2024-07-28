@@ -6,7 +6,7 @@ const BASE_URL = "https://sso.ssv.uz";
 
 const client_id = "94f83670-f841-4ec5-a593-72d2873f054b";
 const client_secret = "IAIkBdrmSVPWPH5vtvihY4vOfLW3V19oDEC9wHIs";
-const redirect_uri = "your_redirect_uri";
+const redirect_uri = "https://vue3-sso-ssv.netlify.app/";
 
 function generateRandomString(length) {
   const array = new Uint32Array(length);
