@@ -1,9 +1,14 @@
 <!-- src/components/Dashboard.vue -->
 
 <template>
-    <div>
+
+    <div v-if="user">
       <h1>Dashboard</h1>
       <p>Welcome, {{ user.name }}</p>
+    </div>
+
+    <div v-else>
+      <router-link style="margin-right: 10px; background-color: blue; color: white; padding: 5px 15px; border-radius: 5px" to="/login">Login</router-link>
     </div>
   </template>
   
@@ -13,7 +18,7 @@
   
   export default {
     setup() {
-      const user = ref({});
+      const user = ref(null);
   
       onMounted(async () => {
         user.value = await getUserInfo();
