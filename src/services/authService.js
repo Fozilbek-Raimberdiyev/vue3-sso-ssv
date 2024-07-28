@@ -43,7 +43,7 @@ export async function redirectToSSO() {
 
   const codeChallenge = await pkceChallengeFromVerifier(codeVerifier);
 
-  const url = `${BASE_URL}/authorize?response_type=code&client_id=${encodeURIComponent(
+  const url = `${BASE_URL}/oauth/authorize?response_type=code&client_id=${encodeURIComponent(
     client_id
   )}&redirect_uri=${encodeURIComponent(
     redirect_uri
